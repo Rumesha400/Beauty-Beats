@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>BeautyBeats</title>
+        <meta name="viewport" content="initial-scale=1.0,userscalabe=yes,min-scale=0.5,max-scale=5.0,width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="ALLCSSFILES/style.css" type="text/css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .containerfluid{
+                overflow-x: hidden;
+                background-color: rgb(160, 223, 241);;
+            }
+
+            /* for the insta,fb,twit,pint logo images */
+            .adjustimage{
+                height: 35px;
+                width: 30px;
+                text-decoration: none;
+                padding: 2px;
+            }
+            #lines{
+                text-decoration: none;
+            }
+
+            /* for "free bookmarks" text */
+            .bold {
+                font-weight: 800;
+                transition: color 0.3s ease; /* Transition effect for color change */
+            }
+            .bold:hover {
+                color: white; /* Change color on hover */
+                animation: fadein 0.5s ease; /* Apply fade-in animation on hover */
+            }
+            @keyframes fadein {
+            from {
+                opacity: 0; /* Start with 0 opacity */
+            }
+            to {
+                opacity: 1; /* Fade in to full opacity */
+            }}
+
+            header {
+            background-image: url('image/cartback.jpeg');
+            background-size: 500px;
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            padding: 50px;
+            position: relative;
+            height: 600px;
+            }
+            .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better contrast */
+            }
+            .container{
+                width: 600px;
+            }
+            @media (max-width: 576px) {
+            .col-xl-8 {
+                height: 400px; /* Decrease height on small screens */
+                width: min-content;
+            }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="containerfluid">
+            <div class="row">
+            <div class="col-sm-10">
+                <h4 class="bold sans-serif" style="text-align: center;">Free Sample Of Product</h4>
+            </div>
+            <div class="col-sm-2">
+                <a href="https://www.instagram.com/seekersbooks/p/BmPL4YlhcXI/" id="lines">
+                    <img src="image/instalogo.png" class="adjustimage">
+                </a>
+                <a href="https://www.facebook.com/seekershome/" id="lines">
+                    <img src="image/fblogo.png" class="adjustimage">
+                </a>
+                <a href="https://twitter.com/"  id="lines">
+                    <img src="image/twitter.jpeg" class="adjustimage">
+                </a>
+                <a href="https://www.pinterest.com/bookseekers/" id="lines">
+                    <img src="image/pinterestlogo.png" class="adjustimage">
+                </a>
+            </div></div>
+        </div>
+
+        <div class="fixed-on-scroll"  data-bs-spy="scroll">
+            <div class="fixed-on-scroll"  data-bs-spy="scroll">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light" >
+                <div class="container-fluid" style="background-color:rgb(160, 223, 241); opacity: 0px;">
+                    <div class="collapse navbar-collapse navmain " id="link">
+                        <h2 class="logo">Beauty Beats</h2>
+                        <ul class="navbar-nav nav-tabs ">
+                                <li class="nav-item ">
+                                    <nav class="navbar-link">
+                                        <a href="home.html" class="nav-link mt-3"  style="color: black;" data-bs-toggle="tab">Home</a>
+                                    </nav>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <div id="dropdownMenu ">
+                                    <a href="#section2" class="nav-link dropdown-toggle mt-3" style="color: black;" data-bs-toggle="dropdown">Product</a>
+                                    <ul  class="dropdown-menu">
+                                        <li><a href="#section21" class="dropdown-item">Cleanser</a></li>
+                                        <li><a href="#section22" class="dropdown-item">Serum</a></li>
+                                        <li><a href="#section23" class="dropdown-item">Sunscreen</a></li>
+                                        <li><a href="#section24" class="dropdown-item">Moisturizer</a></li>
+                                    </ul>
+                                    </div>
+                                </li>
+                                        
+                                <li class="nav-item">
+                                    <a href="aboutus.html" class="nav-link mt-3"style="color: black;" data-bs-toggle="tab">About Us</a>
+                                </li>
+                                <li class="nav-item" style="justify-content: center;">
+                                    <div class="search-container mt-3 ml-6">
+                                        <form action="/search" method="get">
+                                          <input type="text" id="searchInput" name="q" placeholder="Search...">
+                                          <button type="submit"><img src="https://rails-assets-us.bookshop.org/ds/images/search.179df46915b36d0fba2c0ab8f704467e37bb6558.svg"
+                                            title="search" style="height:20px;" alt="search"></button>
+                                        </form>
+                                      </div>
+                                      
+                                      <div id="searchResults">
+                                        <!-- Search results will be displayed here -->
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="s-right">
+                        <div  class="ml-5 col-sm-4">
+                            
+                        <!-- for signup profile , applying cart-->
+                    <div class="p-1 col-md-3 mt-3 d-flex align-items-center">
+                        <button class="btn">
+                            <a href="Signup.html">
+                                <img class="mt-sm-5 ml-5" style="height: 40px;width: 40px; margin-left: 190px;" src="image/profilelogo.jpg" alt="account" id="profileImage">
+                                <span class="profile-initials" id="initials"></span>
+                            </a>
+                        </button>
+            
+                        <!-- for applying cart  -->
+                        <button class="btn">
+                            <a href="cart.html">
+                                <img class="mt-sm-5 ml-1" style="height: 40px;width: 40px;" src="https://rails-assets-us.bookshop.org/ds/images/basket.76e8fe7b84404cf9232df8188db62fd33e0c6453.svg" alt="cart">
+                            </a>
+                        </button>    
+                    </div>
+                            
+                </nav>
+            </div>
+            
+        </div>
+
+        <header>
+            <div class="container mt-xl-5">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="form-container text-center">
+                            <h1 class="heading-create">Cart</h1>
+                            <h4>Your cart is currently empty.</h4>
+                            <button class="btn btn-dark">
+                                <a href="home.html" style="text-decoration: none;color: white;">Continue Shopping</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
+
+
+

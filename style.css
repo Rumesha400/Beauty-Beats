@@ -1,0 +1,227 @@
+
+.search-container {
+  margin:auto;
+}
+
+input[type=text] {
+  width:auto;
+  padding:auto;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.line {
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+  
+  .line__content {
+    display: inline-block;
+    padding-left: 100%; /* Ensure the text starts off-screen */
+    animation: marquee 30s linear infinite; /* Adjust duration as needed */
+    font-size: larger;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+    white-space: warp;
+    
+  }
+  
+  @keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+  }
+
+
+.carousel-text {   position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size:60px;
+    font-weight: bold;
+    animation: slideIn 2s;  }
+
+@keyframes slideIn {
+from { top:0; opacity: 0; }
+to {  opacity: 1; }  }
+
+.carousel-text1 {   position: absolute;
+    top: 65%;
+    left: 50%;
+    font-family:'Courier New', Courier, monospace;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size:30px;
+    animation: slideIn 2s;  }
+
+@keyframes slideIn {
+from { top:0; opacity: 0; }
+to {  opacity: 1; }  }
+
+#dropdownMenu:hover .dropdown-menu {display: block; }
+
+.dropdown-menu {
+display: none; /* Hide the dropdown menu by default */
+position: absolute;
+background-color: rgb(211, 139, 137);
+min-width: 200px;
+box-shadow: 0px 8px 16px 0px rgba(128, 119, 119, 0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.dropdown-item {
+color: #0e0b0b;
+text-decoration: none;
+display: block;
+padding: 6px 0;
+}
+
+.dropdown-item:hover {
+background-color: rgb(238, 229, 231);
+}
+
+.fixed-on-scroll {
+position: sticky;
+top: 0;
+backdrop-filter: blur(10px);
+background-color: rgba(197, 82, 82, 0.8);
+z-index: 1000;
+transition: top 0.3s; /* Smooth transition */ 
+}
+.fixed-on-scroll .navbar{
+z-index: 1100;
+position: sticky;
+transition: 0.3s;
+top: 20px;
+}
+
+/*Apply navbar css */
+.navbar-nav .nav-link {
+font-family: IBM Plex Sans, sans-serif;
+font-size: 20px; /* Increased font size */
+position: relative;
+border: none;
+border-bottom: none;
+}
+.navbar-nav .nav-link:hover::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -2px; /* Red underline position */
+width: 100%;
+height: 3px;
+background-color: #0e0d0d; /* Red underline color */
+border: none;
+border-bottom: none;
+}
+.navbar-nav .nav-item:hover .nav-link{
+font-weight: bold;
+font-size: 20px;
+font-family: IBM Plex Sans, sans-serif;
+border: none;
+border-bottom: none;
+
+}
+/* Adjust navbar height */
+.navbar {
+padding: 0; /* Remove default padding */
+height: auto !important; /* Reset height to auto */
+position:relative;
+text-decoration: none;
+justify-content:space-between;
+}
+
+nav{
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+/*Apply css to lightdeals images*/
+.divitem1{
+margin-left: 20px;
+}
+.divitem1 > .divitem1book1 > img{
+height: 300px;
+width: 300px;
+}
+.price-wrapper{
+text-decoration: line-through rgb(21, 1, 1);
+text-shadow: #2c293b;
+color: gray;
+}
+.divitem2 > .divitem2book2 > img{
+height: 300px;
+width: 300px;
+}
+.divitem3 > .divitem3book3 > img{
+height: 300px;
+width: 300px;
+}
+.discount-tag {
+position: absolute;
+top: 0;
+right:60;
+background-color: #668ace;
+color: white;
+padding: 5px 10px;
+font-size: 15px;
+border-radius: 5px;
+}
+/*Applying hover effect to books title */
+#underhover:hover {
+text-decoration: underline;
+color: #2a4b7e;
+
+}
+
+/*Applying featured tag in fiction */
+.position-relative {
+position: relative;
+}
+
+
+.divitems:hover .image1 {
+    display: none; /* Hide the first image when hovering over the book item */
+    }
+
+/* Applying second image to fiction div */
+.image2 {
+    display: none; /* Initially hide the image */
+    width: 100px; /* Set the initial width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 3s, width 2s, height 2s; /* Apply transitions to transform, width, and height */
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Align the image to the top */
+    left: 0; /* Align the image to the left */
+    z-index: -1; /* Set a lower z-index to position it behind other content */
+}
+
+.divitems:hover .image2 {
+    width: 400px; /* Increase the width on hover */
+    height: 275px; /* Automatically adjust height to maintain aspect ratio */
+    display: block; /* Display the image on hover */
+    transform: scale(1.5); /* Scale the image on hover */
+    z-index: 1; /* Bring the image to the front on hover */
+}
+
+/* for applying sale tag on ya books */
+.sale-tag {
+position: absolute;
+margin-top: -25px;
+background-color: orangered;
+padding: 5px 10px;
+border-radius: 0px;
+color: white;
+font-weight: bold;
+}

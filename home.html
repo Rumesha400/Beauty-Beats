@@ -1,0 +1,484 @@
+<html>
+    <head>
+        <title>BeautyBeats</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" href="style.css">
+            
+</head>
+
+
+<body style="background-color: rgb(238, 229, 231); overflow-x: hidden;">
+<!--navbar-->
+<div class="fixed-on-scroll"  data-bs-spy="scroll" id="home">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light" >
+    <div class="container-fluid" style="background-color:rgb(160, 223, 241); opacity: 0px;">
+        <div class="collapse navbar-collapse navmain " id="link">
+            <a class="navbar-brand" href="home.html" id="logo"> <h2 class="logo">Beauty Beats</h2></a>
+            <ul class="navbar-nav nav-tabs ">
+                    <li class="nav-item ">
+                        
+                            <a href="home.html" class="nav-link mt-3"  style="color: black;" data-bs-toggle="tab">Home</a>
+                        
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div id="dropdownMenu ">
+                        <a href="home.html" class="nav-link dropdown-toggle mt-3" style="color: black;" data-bs-toggle="dropdown">Product</a>
+                        <ul  class="dropdown-menu">
+                            <li><a href="#section21" class="dropdown-item">Cleanser</a></li>
+                            <li><a href="#section22" class="dropdown-item">Serum</a></li>
+                            <li><a href="#section23" class="dropdown-item">Sunscreen</a></li>
+                            <li><a href="#section24" class="dropdown-item">Moisturizer</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                            
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link mt-3"style="color: black;" data-bs-toggle="tab">About Us</a>
+                    </li>
+
+
+                    <li class="nav-item" style="justify-content: center;">
+                        <div class="search-container mt-3 ml-6">
+                            <form action="/search" method="get">
+                              <input type="text" id="searchInput" name="q" placeholder="Search...">
+                              <button type="submit"><img src="https://rails-assets-us.bookshop.org/ds/images/search.179df46915b36d0fba2c0ab8f704467e37bb6558.svg"
+                                title="search" style="height:10px;" alt="search"></button>
+                            </form>
+                          </div>
+                          
+                          <div id="searchResults">
+                            <!-- Search results will be displayed here -->
+                          </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="s-right">
+            <div  class="ml-5 col-sm-4">
+                
+            <!-- for signup profile , applying cart-->
+        <div class="mt-1 col-md-3 d-flex align-items-center">
+            <button class="btn">
+                <a href="Signup.html">
+                    <img class="mt-sm-5 ml-5" style="height: 40px;width: 40px; margin-left: 190px;" src="image/profilelogo.jpg" alt="account" id="profileImage">
+                    <span class="profile-initials" id="initials"></span>
+                </a>
+            </button>
+
+            <!-- for applying cart  -->
+            <button class="btn">
+                <a href="cart.html">
+                    <img class="mt-sm-5 ml-1" style="height: 40px;width: 40px;" src="https://rails-assets-us.bookshop.org/ds/images/basket.76e8fe7b84404cf9232df8188db62fd33e0c6453.svg" alt="cart">
+                </a>
+            </button>    
+        </div>
+                
+    </nav>
+</div>
+
+        <!--for running line-->
+        <div class="line">
+            <div class="line__content"><pre>For every day, for every mood, for every you....!                                 For every day, for every mood, for every you....!   </pre></div>
+          </div>
+
+   
+<!-- carosel slide -->
+        <div id="home" class="carousel slide" data-bs-ride="carousel" style="z-index: -1;">
+            <div class="carousel-indicators">
+                <button data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#demo" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="image/carosalback1.webp" style="height: 700px;width:1000;">
+                    <div class="carousel-text"><pre>A One-Stop Online
+Wellness Clinic </pre></div> 
+                    <div class="carousel-text1">Your Skin Deserves The Best.</div>    
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="image/carosalback3.webp" style="height: 700px;" alt="">
+                    <div class="carousel-text">Skin Care</div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+
+ <!-- For applying newest cleanser carousels  -->
+ <div class="mt-3 container" style="display: block;" id="section21">
+    <h3><span class="text-dark" style="font-family:Georgia,'Times New Roman', Times, serif; font-weight: bold;">Newest Arrivals</span></h3>
+</div>
+<div class="container">
+    <ul class="nav nav-underline lightdeal">
+        <li class="nav-item "><a href="#" class="nav-link active" style="color: #3093c1;font-size: 30px;">Cleanser</a></li>
+    </ul>
+</div>
+<div id="carouse2" class="carousel slide" data-bs-ride="carousel" style="padding: 100px;" data-bs-interval="2000">
+    <div class="carousel-inner">
+        <div class="carousel-item active slides">
+            <div class="row">
+            <div class="divitem1 col-lg-4 position-relative">
+                <a href="#" class="divitem1book1" title="BlueBerry Bounce Gentle Cleanser -Korean Glass Skin">
+                <img src="image/cleanser2.jpg" alt="Image 1" style="height: 350px;width: 350px;"></a>
+                <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none">BlueBerry Bounce Gentle Cleanser -Korean Glass Skin</a></h3>
+                <h4>₹ 220 </h4>
+                <span class="price-wrapper">₹250.00</span>
+                <div class="discount-tag">12% off</div> <!-- Discount tag -->
+            </div>
+            <div class="divitem2 col-lg-4 position-relative">
+                <a href="#" class="divitem2book2" title="SuperFood Cleanser- Green Tea Spinach">
+                <img src="image/cleanser3.jpg" alt="Image 2" style="height: 350px; width: 350px;;"></a>
+                <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none">SuperFood Cleanser- Green Tea Spinach</a></h3>
+                <h4>₹ 180 </h4>
+                <span class="price-wrapper">₹900.00</span>
+                <div class="discount-tag">80% off</div> <!-- Discount tag -->
+            </div>
+            <div class="divitem3 col-lg-3 position-relative">
+                <a href="#" class="divitem3book3" title="Ma:nyo-Pure Cleansing Oil">
+                <img src="image/cleanser4.jpg" alt="Image 3"  style="height: 350px; width: 350px;"></a>
+                <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none"> Ma:nyo-Pure Cleansing Oil</a></h3><h4>₹ 499 </h4>
+                <span class="price-wrapper">₹ 999.00</span>
+                <div class="discount-tag">50% off</div> <!-- Discount tag -->
+            </div>
+            </div>
+            <div class="row">
+                <div class="divitem1 col-lg-4 position-relative">
+                    <a href="#" class="divitem1book1" title="Centella-Organic Face Tonor">
+                    <img src="image/cleanser5.jpg" alt="Image 1" style="height: 350px;width: 350px;"></a>
+                    <h3 id="underhover"><a href="#" style="color:  #2a4b7e; font-size: 16px;text-decoration: none">Centella-Organic Face Tonor</a></h3>
+                    <h4>₹ 250 </h4>
+                    <span class="price-wrapper">₹500.00</span>
+                    <div class="discount-tag">50% off</div> <!-- Discount tag -->
+                </div>
+                <div class="divitem2 col-lg-4 position-relative">
+                    <a href="#" class="divitem2book2" title="Skin Start Fresh Clarifying Foam Cleanser">
+                    <img src="image/cleanser6.jpg" alt="Image 2" style="height: 350px; width: 350px;;"></a>
+                    <h3 id="underhover"><a href="#" style="color:  #2a4b7e; font-size: 16px;text-decoration: none">Skin Start Fresh Clarifying Foam Cleanser</a></h3><h4>₹ 160 </h4>
+                    <span class="price-wrapper">₹500.00</span>
+                    <div class="discount-tag">68% off</div> <!-- Discount tag -->
+                </div>
+                <div class="divitem3 col-lg-3 position-relative">
+                    <a href="#" class="divitem3book3" title="The Ordinary-Not For Every One">
+                    <img src="image/cleanser7.jpg" alt="Image 3" style="height: 350px; width: 350px;;"></a>
+                    <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none">The Ordinary-Not For Every One</a></h3><h4>₹ 220 </h4>
+                    <span class="price-wrapper">₹ 400.00</span>
+                    <div class="discount-tag">45% off</div> <!-- Discount tag -->
+                </div>
+            </div>
+        </div>             <!-- first slide completed  -->
+
+        <div class="carousel-item slides">
+            <div class="row">
+            <div class="divitem1 col-sm-4 position-relative">
+                <a href="#" class="divitem1book1" title="PMD:cleanse Soothing Antioxidant Cleanser">
+                <img src="image/cleanser8.jpg" alt="Image 1" style="height: 350px;width: 350px;"></a>
+                <h3 id="underhover"><a href="#" style="color:#2a4b7e; font-size: 16px;text-decoration: none"> PMD:cleanse Soothing Antioxidant Cleanser</a></h3>
+                <h4>₹ 450 </h4>
+                <span class="price-wrapper">₹700.00</span>
+                <div class="discount-tag">36% off</div> <!-- Discount tag -->
+            </div>
+            <div class="divitem2 col-sm-4 position-relative">
+                <a href="#" class="divitem2book2" title="ROUND LAB 1025 Dokdo Cleanser  Bubbly Foam">
+                <img src="image/cleanser9.jpg" alt="Image 2" style="height: 350px; width: 350px;;"></a>
+                <h3 id="underhover"><a href="#" style="color:#2a4b7e; font-size: 16px;text-decoration: none">ROUND LAB 1025 Dokdo Cleanser  Bubbly Foam </a></h3><h4>₹ 160 </h4>
+                <span class="price-wrapper">₹300.00</span>
+                <div class="discount-tag">47% off</div> <!-- Discount tag -->
+            </div>
+            <div class="divitem3 col-sm-3 position-relative">
+                <a href="#" class="divitem3book3" title="CERAVE Foaming Facial Cleanser">
+                <img src="image/cleanser10.jpg" alt="Image 3"  style="height: 350px; width: 350px;"></a>
+                <h3 id="underhover"><a href="#" style="color:#2a4b7e; font-size: 16px;text-decoration: none">CERAVE Foaming Facial Cleanser</a></h3><h4>₹ 220 </h4>
+                <span class="price-wrapper">₹ 400.00</span>
+                <div class="discount-tag">45% off</div> <!-- Discount tag -->
+            </div>
+            </div>
+            <div class="row">
+                <div class="divitem1 col-sm-4 position-relative">
+                    <a href="#" class="divitem1book1" title="Then I Met You Cleansing Gel">
+                    <img src="image/cleanser11.jpg" alt="Image 1" style="height: 350px;width: 350px;"></a>
+                    <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none">Then I Met You Cleansing Gel</a></h3>
+                    <h4>₹ 220 </h4>
+                    <span class="price-wrapper">₹400.00</span>
+                    <div class="discount-tag">45% off</div> <!-- Discount tag -->
+                </div>
+                <div class="divitem2 col-sm-4 position-relative">
+                    <a href="#" class="divitem2book2" title="AVEIL Lueur D'or Face Cleanser With Caviar Lime Extract For Smooth & Youthful Skin">
+                    <img src="image/cleanser12.jpg" alt="Image 2" style="height: 350px; width: 350px;;"></a>
+                    <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none">AVEIL Lueur D'or Face Cleanser With Caviar Lime Extract For Smooth & Youthful Skin</a></h3><h4>₹ 170 </h4>
+                    <span class="price-wrapper">₹400.00</span>
+                    <div class="discount-tag">58% off</div> <!-- Discount tag -->
+                </div>
+                <div class="divitem3 col-sm-3 position-relative">
+                    <a href="#" class="divitem3book3" title="The Face Shop Rice Water Bright Foaming Face Wash 50ml, Face Wash for Glowing Skin, Cleanser">
+                    <img src="image/cleanser13.jpg" alt="Image 3" style="height: 350px; width: 350px;;"></a>
+                    <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">The Face Shop Rice Water Bright Foaming Face Wash 50ml, Face Wash for Glowing Skin, Cleanser</a></h3><h4>₹ 160 </h4>
+                    <span class="price-wrapper">₹ 300.00</span>
+                    <div class="discount-tag">47% off</div> <!-- Discount tag -->
+                </div>
+            </div>
+        </div>     <!--  second slide completed -->
+
+    </div>   <!-- carousel inner completed  -->
+            <button class="carousel-control-prev" data-bs-target="#carouse2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark" style="height: 50px; width:50px;border-radius: 30px;"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouse2" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark"  style="height:50px;width:50px;border-radius:30px;"></span>
+            </button> 
+    </div>   <!-- carouse2 completed -->
+
+
+
+    <!-- For serum-->
+    <div class="mt-5 container" style="display: block;" id="section22">
+        <h2><span class="text-dark" style="font-family:Georgia,'Times New Roman', Times, serif; font-weight: bold;">Fiction</span></h2>
+    </div>
+    <div class="container">
+        <ul class="nav nav-underline lightdeal">
+            <li class="nav-item "><a href="#" class="nav-link active" style="color: #3093c1;font-size: 30px;">Serum</a></li>
+        </ul>
+    </div>
+    <div class="mt-5 container">
+        <div class="row">
+            <div class="divitem1 col-md-4 position-relative divitems">
+                
+                <a href="#" class="divitem1book1">
+                    <img src="image/serum1.jpg" alt="Image 1" class="image1">
+                    <img src="image/serum1.1.PNG" alt="Image 2" class="image2"></a>
+                    <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px; text-decoration: none;">Pink AHA BHA Serum (NACIFIC)</a></h3>
+                    <h4>₹ 220 </h4>
+                    <span class="price-wrapper">₹400.00</span>
+                </div>
+                <div class="divitem2 col-md-4 position-relative divitems">
+                   
+                    <a href="#" class="divitem2book2">
+                    <img src="image/serum2.jpg" alt="Image 2" class="image1">
+                    <img src="image/SERUM2.2.PNG" alt="Image 2" class="image2"></a>
+                    <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px; text-decoration: none;">Avocado Retinol Recovery Serum (For Dull Skin)</a></h3>
+                    <h4>₹ 300 </h4>
+                    <span class="price-wrapper">₹900.00</span>
+                </div>
+                <div class="divitem3 col-md-3 position-relative divitems">
+                    
+                    <a href="#" class="divitem3book3">
+                    <img src="image/serum3.jpg" alt="Image 3" class="image1">
+                    <img src="image/serum3.3.PNG" alt="Image 2" class="image2"></a>
+                    <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px; text-decoration: none;">Guava Vitamin C Dark Spot Serum</a>
+                    </h3><h4>₹ 299 </h4>
+                    <span class="price-wrapper">₹ 450.00</span>
+                </div>
+                
+        </div>  <!-- 1 row completed -->
+
+        <div class="mt-5 container">
+            <div class="row">
+                <div class="divitem1 col-md-4 position-relative divitems">
+                    
+                    <a href="#" class="divitem1book1">
+                        <img src="image/serum5.jpg" alt="Image 1" class="image1">
+                        <img src="image/SERUM5.5.PNG" alt="Image 2" class="image2"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px; text-decoration: none;">CENTELLA ASIATICA
+                            FACIAL SERUM
+                            </a></h3>
+                        <h4>₹ 200 </h4>
+                        <span class="price-wrapper">₹500.00</span>
+                    </div>
+                    <div class="divitem2 col-md-4 position-relative divitems">
+                       
+                        <a href="#" class="divitem2book2">
+                        <img src="image/serum7.jpg" alt="Image 2" class="image1">
+                        <img src="image/SERUM7.7.PNG" alt="Image 2" class="image2"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px; text-decoration: none;">FLOS GLOW NIGHT SERUM</a></h3>
+                        <h4>₹ 290 </h4>
+                        <span class="price-wrapper">₹320.00</span>
+                    </div>
+                    <div class="divitem3 col-md-3 position-relative divitems">
+                        
+                        <a href="#" class="divitem3book3">
+                        <img src="image/SERUM8.jpg" alt="Image 3" class="image1">
+                        <img src="image/serum8.8.PNG" alt="Image 2" class="image2"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px; text-decoration: none;">ANUA PEACH
+                            NIGHT AND DAY SERUM
+                            </a>
+                        </h3><h4>₹ 100 </h4>
+                        <span class="price-wrapper">₹ 230.00</span>
+                    </div>
+                    
+            </div>  <!--second row complete-->
+       
+
+
+            <!--applying for sunscreen-->
+        <div class="mt-5" style="display: block;" id="section23">
+            <h2><span class="text-dark" style="font-family:Georgia,'Times New Roman', Times, serif; font-weight: bold;">  sdfe</span></h2>
+        </div>
+        <div class="container">
+            <ul class="nav nav-underline lightdeal">
+                <li class="nav-item "><a href="#" class="nav-link active" style="color: #3093c1; font-size: 30px;">Sunscreen</a></li>
+            </ul>
+        </div>
+        <div class="mt-5 container">
+            <div class="row">
+                <div class="divitem1 col-md-4 position-relative divitems">
+                    <a href="#" class="divitem1book1" title="Dot & Key Watermelon Hyaluronic Cooling Sunscreen SPF 50 PA+++| for Oily, Normal & Combination Skin |
+                    UV + Blue Light Protection">
+                        <img src="image/sun1.jpg" alt="Image 1"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">Dot & Key Watermelon Hyaluronic Cooling Sunscreen SPF 50 PA+++| for Oily, Normal & Combination Skin |
+                             UV + Blue Light Protection</a></h3>
+                        <h4>₹ 220 </h4>
+                        <span class="price-wrapper">₹600.00</span>
+                    </div>
+                    <div class="divitem2 col-md-4 position-relative divitems">
+                        <a href="#" class="divitem2book2" title="SKIN1004 MADAGASCAR CENTELLA HYALU-CICA WATER-FIT SUN SERUM">
+                        <img src="image/sun2.jpg" alt="Image 2"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">SKIN1004 MADAGASCAR CENTELLA HYALU-CICA WATER-FIT SUN SERUM</a></h3><h4>₹ 220 </h4>
+                        <span class="price-wrapper">₹499.00</span>
+                        <div class="discount-tag">56% off</div> <!-- Discount tag -->
+                    </div>
+                    <div class="divitem3 col-md-3 position-relative divitems">
+                        <a href="#" class="divitem3book3" title="ESPEICK SUN – MINERALISCHE SONNENPFLEGE OHNE WEISS-EFFEKT">
+                        <img src="image/sun3.jpg" alt="Image 3"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">ESPEICK SUN – MINERALISCHE SONNENPFLEGE OHNE WEISS-EFFEKT</a></h3><h4>₹ 250 </h4>
+                        <span class="price-wrapper">₹ 600.00</span>
+                        <div class="discount-tag">58% off</div> <!-- Discount tag -->
+                    </div>
+            </div>      <!-- 1 row completed -->
+
+            <div class="row">
+                <div class="divitem1 col-md-4 position-relative divitems">
+                    <a href="#" class="divitem1book1" title="PERFECT UV PROTECTION CREAM TRIPLE CARE SPF50+ PA+++">
+                        <img src="image/sun4.jpg" alt="Image 1"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">PERFECT UV PROTECTION CREAM TRIPLE CARE SPF50+ PA+++</a></h3>
+                        <h4>₹ 180 </h4>
+                        <span class="price-wrapper">₹400.00</span>
+                    </div>
+                    <div class="divitem2 col-md-4 position-relative divitems">
+                        <a href="#" class="divitem2book2" title="Unseen Sunscreen SPF 40">
+                        <img src="image/sun5.jpg" alt="Image 2"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">Unseen Sunscreen SPF 40</a></h3><h4>₹ 160 </h4>
+                        <span class="price-wrapper">₹400.00</span>
+                        <div class="discount-tag">60% off</div> <!-- Discount tag -->
+                    </div>
+                    <div class="divitem3 col-md-3 position-relative divitems">
+                        <a href="#" class="divitem3book3" title="Dr.Donkey Minimal Scnscreen lotion SPF50+ PA++">
+                        <img src="image/sun6.jpg" alt="Image 3"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">Dr.Donkey Minimal Scnscreen lotion SPF50+ PA++</a></h3><h4>₹ 160 </h4>
+                        <span class="price-wrapper">₹ 400.00</span>
+                        <div class="discount-tag">60% off</div> <!-- Discount tag -->
+                    </div>
+            </div>
+        </div>
+
+         <!--applying for MOSTURIZER-->
+         <div class="mt-5" style="display: block;" id="section24">
+            <h2><span class="text-dark" style="font-family:Georgia,'Times New Roman', Times, serif; font-weight: bold;">  sdfe</span></h2>
+        </div>
+        <div class="container">
+            <ul class="nav nav-underline lightdeal">
+                <li class="nav-item "><a href="#" class="nav-link active" style="color: #3093c1; font-size: 30px;">Moisturizer</a></li>
+            </ul>
+        </div>
+        <div class="mt-5 container-fluid">
+            <div class="row">
+                <div class="divitem1 col-md-4 position-relative divitems">
+                    <a href="#" class="divitem1book1">
+                        <img src="image/mos6.webp" alt="Image 1"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">NIVEA Soft Light Moisturizer, 300 ml, for Face, Hand & Body, </a></h3>
+                        <h4>₹ 220 </h4>
+                        <span class="price-wrapper">₹600.00</span>
+                    </div>
+                    <div class="divitem2 col-md-4 position-relative divitems">
+                        <a href="#" class="divitem2book2">
+                        <img src="image/mos5.webp" alt="Image 2"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">Lakme Peach Milk, Light Weight Moisturizer, 120ml, </a></h3><h4>₹ 220 </h4>
+                        <span class="price-wrapper">₹499.00</span>
+                        <div class="discount-tag">56% off</div> <!-- Discount tag -->
+                    </div>
+                    <div class="divitem3 col-md-3 position-relative divitems">
+                        <a href="#" class="divitem3book3">
+                        <img src="image/mos4.webp" alt="Image 3"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;"> Dot & Key Vitamin C + E Sorbet Super Bright Moisturizer for Face | Vitamin C Face Moisturizer For Glowing Skin </a></h3><h4>₹ 250 </h4>
+                        <span class="price-wrapper">₹ 600.00</span>
+                        <div class="discount-tag">58% off</div> <!-- Discount tag -->
+                    </div>
+            </div>      <!-- 1 row completed -->
+
+            <div class="row">
+                <div class="divitem1 col-md-4 position-relative divitems">
+                    <a href="#" class="divitem1book1">
+                        <img src="image/mos3.jpg" alt="Image 1"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">Aveeno Clear Complexion Daily Moisturiser </a></h3>
+                        <h4>₹ 180 </h4>
+                        <span class="price-wrapper">₹400.00</span>
+                    </div>
+                    <div class="divitem2 col-md-4 position-relative divitems">
+                        <a href="#" class="divitem2book2">
+                        <img src="image/mos2.jpg" alt="Image 2"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;"> Vaseline Healthy Bright serum Brust Moisturiser </a></h3><h4>₹ 160 </h4>
+                        <span class="price-wrapper">₹400.00</span>
+                        <div class="discount-tag">60% off</div> <!-- Discount tag -->
+                    </div>
+                    <div class="divitem3 col-md-3 position-relative divitems">
+                        <a href="#" class="divitem3book3">
+                        <img src="image/mos1.jpg" alt="Image 3"></a>
+                        <h3 id="underhover"><a href="#" style="color: #2a4b7e; font-size: 16px;text-decoration: none;">  Pond's Super Light Oil Free Moisturiser Review</a></h3><h4>₹ 160 </h4>
+                        <span class="price-wrapper">₹ 400.00</span>
+                        <div class="discount-tag">60% off</div> <!-- Discount tag -->
+                    </div>
+            </div>
+        </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <h3>Contact</h3>
+                    <h5><a href="#">bookseekers11@gmail.com</a></h5>
+                    <h4 class="text-secondary">+91 93-547-97-123</h4>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <h3>About</h3>
+                    <a href="#"><h5>Terms & Conditions</h5></a>
+                    <a href="#"><h5>Privacy Policy</h5></a>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <h3>Help & Guide</h3>
+                    <a href="#"><h5>Inquiry</h5></a>
+                    <a href="#"><h5>Refund Policy</h5></a>
+                    <a href="#"><h5>Shipping Policy</h5></a>
+                    <a href="#"><h5>Cancel Order</h5></a>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <h3>Follow Us</h3>
+                    <h5><a href="www.instagram.com">Instagram</a></h5>
+                    <h5><a href="https://www.facebook.com/seekershome/">Facebook</a></h5>
+                    <h5><a href="https://twitter.com/">Twitter</a></h5>
+                    <h5><a href="https://www.pinterest.com/bookseekers/">Pinterest</a></h5>
+                </div>
+            </div>
+            <div class="row footer-bottom">
+                <div class="col-md-12">
+                    <hr>
+                    <span class="text-secondary">© 2024 The Book Seekers. All Rights Reserved. Proudly Designed By Rumesha Ansari</span>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

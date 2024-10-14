@@ -1,0 +1,340 @@
+<html>
+    <head>
+        <title>BeautyBeats</title>
+        <meta name="viewport" content="initial-scale=1.0,userscalabe=yes,min-scale=0.5,max-scale=5.0,width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="ALLCSSFILES/style.css" type="text/css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .containerfluid{
+                overflow-x: hidden;
+                background-color: rgb(0, 0, 0);
+            }
+
+            /* for the insta,fb,twit,pint logo images */
+            .adjustimage{
+                height: 35px;
+                width: 30px;
+                text-decoration: none;
+                padding: 2px;
+            }
+            #lines{
+                text-decoration: none;
+            }
+
+            /* for "free bookmarks" text */
+            .bold {
+                font-weight: 800;
+                transition: color 0.3s ease; /* Transition effect for color change */
+            }
+            .bold:hover {
+                color: white; /* Change color on hover */
+                animation: fadein 0.5s ease; /* Apply fade-in animation on hover */
+            }
+            @keyframes fadein {
+            from {
+                opacity: 0; /* Start with 0 opacity */
+            }
+            to {
+                opacity: 1; /* Fade in to full opacity */
+            }}
+            .heading-create{
+                font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+                align-content: center;
+                display: block;
+                padding-top: 10px;
+                padding-left: 250px;
+                font-size: 50px;
+                font-weight: 10%;
+                color: white;
+            }
+            :root{
+                --typeHeaderPrimary: "Harmonia Sans";
+                --typeHeaderFallback: sans-serif;
+            }
+            .form-vertical{
+                height: max-content;
+                width: 900px;
+                padding-left: 400px;
+            }
+            .fontf{
+                font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+                font-weight: 400;
+                font-size: x-large
+            }
+            header {
+            background-image: url('backgroundprofile.jpg');
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            padding: 50px;
+            position: relative;
+            }
+            .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better contrast */
+            }
+                /* Adjustments for smaller screens */
+            @media (max-width: 992px) {
+                .form-md-vertical {
+                    width: 100%; /* Full width on smaller screens */
+                }
+            }
+
+            @media (max-width: 576px) {
+                .heading-create {
+                    padding-left: 0; /* Remove left padding for smaller screens */
+                    text-align: center; /* Center the text on smaller screens */
+                }
+
+                .form-control {
+                    width: 100%; /* Make input fields full width on smaller screens */
+                }
+            }
+            .btn-create {
+                width: 40%; /* Make the create button full width on smaller screens */
+                min-width: 200px; /* Set a minimum width for the button */
+                padding: 10px 20px; /* Adjust padding to increase button size */
+                font-size: 18px; /* Increase font size for better visibility */
+            }
+
+ #dropdownMenu:hover .dropdown-menu {display: block; }
+
+.dropdown-menu {
+display: none; /* Hide the dropdown menu by default */
+position: absolute;
+background-color: rgb(211, 139, 137);
+min-width: 200px;
+box-shadow: 0px 8px 16px 0px rgba(128, 119, 119, 0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.dropdown-item {
+color: #0e0b0b;
+text-decoration: none;
+display: block;
+padding: 6px 0;
+}
+
+.dropdown-item:hover {
+background-color: rgb(238, 229, 231);
+}
+.navbar-nav .nav-link {
+font-family: IBM Plex Sans, sans-serif;
+font-size: 20px; /* Increased font size */
+position: relative;
+border: none;
+border-bottom: none;
+}
+.navbar-nav .nav-link:hover::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -2px; /* Red underline position */
+width: 100%;
+height: 3px;
+background-color: #0e0d0d; /* Red underline color */
+border: none;
+border-bottom: none;
+}
+.navbar-nav .nav-item:hover .nav-link{
+font-weight: bold;
+font-size: 20px;
+font-family: IBM Plex Sans, sans-serif;
+border: none;
+border-bottom: none;
+
+}
+/* Adjust navbar height */
+.navbar {
+padding: 0; /* Remove default padding */
+height: auto !important; /* Reset height to auto */
+position:relative;
+text-decoration: none;
+justify-content:space-between;
+}
+
+nav{
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <!-- for free bookmarks tag -->
+        <div class="containerfluid">
+            <div class="row sm">
+            <div class="col-sm-10">
+                <h4 class="bold sans-serif" style="text-align: center; color:white;">Free Sample Of Product </h4>
+            </div>
+
+            <!-- for social media line -->
+            <div class="col-sm-2">
+                <a href="https://www.instagram.com/seekersbooks/p/BmPL4YlhcXI/" id="lines">
+                    <img src="image/instalogo.png" class="adjustimage">
+                </a>
+                <a href="https://www.facebook.com/seekershome/" id="lines">
+                    <img src="image/fblogo.png" class="adjustimage">
+                </a>
+                <a href="https://twitter.com/"  id="lines">
+                    <img src="image/twitter.jpeg" class="adjustimage">
+                </a>
+                <a href="https://www.pinterest.com/bookseekers/" id="lines">
+                    <img src="image/pinterestlogo.png" class="adjustimage">
+                </a>
+            </div></div>
+        </div>
+
+        <!-- for navbar line -->
+        <div class="fixed-on-scroll"  data-bs-spy="scroll">
+            <div class="fixed-on-scroll"  data-bs-spy="scroll">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light" >
+                <div class="container-fluid" style="background-color:rgb(160, 223, 241); opacity: 0px;">
+                    <div class="collapse navbar-collapse navmain " id="link">
+                        <h2 class="logo">Beauty Beats</h2>
+                        <ul class="navbar-nav nav-tabs ">
+                                <li class="nav-item ">
+                                    <nav class="navbar-link">
+                                        <a href="home.html" class="nav-link mt-3"  style="color: black;" data-bs-toggle="tab">Home</a>
+                                    </nav>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <div id="dropdownMenu ">
+                                    <a href="#section2" class="nav-link dropdown-toggle mt-3" style="color: black;" data-bs-toggle="dropdown">Product</a>
+                                    <ul  class="dropdown-menu">
+                                        <li><a href="#section21" class="dropdown-item">Cleanser</a></li>
+                                        <li><a href="#section22" class="dropdown-item">Serum</a></li>
+                                        <li><a href="#section23" class="dropdown-item">Sunscreen</a></li>
+                                        <li><a href="#section24" class="dropdown-item">Moisturizer</a></li>
+                                    </ul>
+                                    </div>
+                                </li>
+                                        
+                                <li class="nav-item">
+                                    <a href="aboutus.html" class="nav-link mt-3"style="color: black;" data-bs-toggle="tab">About Us</a>
+                                </li>
+                                <li class="nav-item" style="justify-content: center;">
+                                    <div class="search-container mt-3 ml-6">
+                                        <form action="/search" method="get">
+                                          <input type="text" id="searchInput" name="q" placeholder="Search...">
+                                          <button type="submit"><img src="https://rails-assets-us.bookshop.org/ds/images/search.179df46915b36d0fba2c0ab8f704467e37bb6558.svg"
+                                            title="search" style="height:20px;" alt="search"></button>
+                                        </form>
+                                      </div>
+                                      
+                                      <div id="searchResults">
+                                        <!-- Search results will be displayed here -->
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="s-right">
+                        <div  class="ml-5 col-sm-4">   
+                        <!-- for signup profile , applying cart-->
+                    <div class="p-1 col-md-3 mt-3 d-flex align-items-center">
+                        <button class="btn">
+                            <a href="Signup.html">
+                                <img class="mt-sm-5 ml-5" style="height: 40px;width: 40px; margin-left: 190px;" src="image/profilelogo.jpg" alt="account" id="profileImage">
+                                <span class="profile-initials" id="initials"></span>
+                            </a>
+                        </button>
+            
+                        <!-- for applying cart  -->
+                        <button class="btn">
+                            <a href="cart.html">
+                                <img class="mt-sm-5 ml-1" style="height: 40px;width: 40px;" src="https://rails-assets-us.bookshop.org/ds/images/basket.76e8fe7b84404cf9232df8188db62fd33e0c6453.svg" alt="cart">
+                            </a>
+                        </button>    
+                    </div>
+                            
+                </nav>
+        </div>
+
+        <header>
+            <div class="container-fluid py-5" >
+                <h1 class="heading-create">Create Account</h1>
+            </div>
+            <div class="form-md-vertical form-container">
+                <form method="get" action="#" id="createAccountForm">
+                    <div class="mt-3 was-validated row-md ">
+                        <label for="em" class="form-label fontf">First Name</label><br>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your firstname"  required>
+                    </div>
+                    <div class="mt-3 was-validated row-md">
+                        <label for="em" class="form-label fontf">Last Name</label><br>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your lastname"  required>
+                    </div>
+                    <div class="mt-3 was-validated">
+                        <label for="em" class="form-label fontf">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" name="email" required>
+                    </div>
+                    <div class="mt-3 was-validated">
+                        <label for="pwd" class="form-label fontf">Password</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter your password" name="pswd" required>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Invalid</div>
+                    </div>
+                    <div class="mt-3">
+                        <input type="checkbox">Remember Me
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-secondary">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our 
+                        <a href="#" target="_blank">Privacy Policy.</a></p>
+                    </div>
+                    <div class="form-check mt-3">
+                        <button type="submit" class="btn btn-dark btn-create"  data-bs-toggle="modal" data-bs-target="#mod" style="height: 50px;">Create</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- for modal dialogue box -->    
+            <div class="modal fade" id="mod">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fontf">Account </h5>
+                            <button class="close" data-bs-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body text-dark" >Successfully Created!</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </header>
+
+        <script>
+            document.getElementById('createAccountForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+                
+                // Get form values
+                var firstName = document.getElementById('firstName').value;
+                var lastName = document.getElementById('lastName').value;
+                
+                // Store first name and last name in localStorage
+                localStorage.setItem('firstName', firstName);
+                localStorage.setItem('lastName', lastName);
+        
+                // Close the modal dialog
+                var modal = new bootstrap.Modal(document.getElementById('mod'));
+                modal.show();
+        
+                // Redirect to home page after the modal is closed
+                document.getElementById('mod').addEventListener('hidden.bs.modal', function () {
+                    window.location.href = 'MainFile.html';
+                });
+            });
+        </script>
+        
+        
+    </body>
+</html>
